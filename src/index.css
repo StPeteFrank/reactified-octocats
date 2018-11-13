@@ -1,14 +1,103 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  min-height: 100%;
+  font: 16px / 1 sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: rgb(238, 236, 236);
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 22px;
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  font-weight: bold;
+  margin-right: 4px;
+  font-size: 13px;
+}
+/* Listing shells */
+.shell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-shell img {
+  width: 424px;
+  margin: 10px;
+  border: 1px solid grey;
+}
+.shell-footer {
+  width: 424px;
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+  text-align: right;
+  margin: 0 10px 0;
+  border-bottom: 1px solid #cacaca;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 15px;
+}
+.author-info {
+  display: flex;
+  align-items: center;
+}
+.author-by {
+  margin-right: 5px;
+}
+.shell-footer img {
+  height: 28px;
+  width: 28px;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+/* A good footer to use */
+footer {
+  width: inherit;
+  margin-top: 88px;
+}
+.footer-border {
+  border-top: 1px solid #ddd;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left ul {
+  list-style-type: none;
+}
+.footer-left li {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #4183c4;
+}
+/* how to hover */
+.footer-left li:hover {
+  text-decoration: underline;
+}
+.footer-right p {
+  line-height: 0.5rem;
+  margin-right: 1rem;
+  color: grey;
+  font-size: 12px;
+}
+/* From Font Awesome */
+.fa-github {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+.fa-github:hover {
+  color: rgb(145, 145, 145);
 }
