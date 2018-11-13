@@ -1,27 +1,27 @@
 import React, { Component } from 'react'
 
-class Clowder extends Component {
+class Octocat extends Component {
   render() {
     return (
       <div class="img-container">
         <div class="img-shell">
           <a>
-            <img src="https://octodex.github.com//images/benevocats.png" />
+            <img src={this.props.image} />
           </a>
         </div>
         <div class="shell-footer">
-          <p class="number">#6</p>
+          <p class="number">{this.props.number}</p>
           <div class="author-info">
             <p class="author-by">
               <span>the </span>
-              <span class="cat-name">Benevocat </span>
+              <span class="cat-name">{this.props.catName} </span>
               <span>by </span>
             </p>
-            <img src="https://github.com/cameronmcefee.png" />
+            <img src={this.props.imageAuthor} />
           </div>
         </div>
       </div>
     )
   }
 }
-export default Clowder
+export default Octocat
