@@ -73,7 +73,7 @@ class Main extends Component {
           imageAuthor="https://github.com/cameronmcefee.png"
         />
         <Octocat
-          image="`https://octodex.github.com//images/inspectocat.jpg"
+          image="https://octodex.github.com//images/inspectocat.jpg"
           number="#24"
           catName="Inspectocat"
           imageAuthor="https://github.com/jasoncostello.png"
